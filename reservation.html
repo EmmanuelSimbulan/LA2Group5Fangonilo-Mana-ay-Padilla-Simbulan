@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patty's Point Reservation</title>
+    <link rel="icon" type="image/x-icon" href="/pics/logo.png">
+    <link rel="stylesheet" href="styles/reservation.css">
+    <link href="styles/footer.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+    <div class="container">
+        <div class="div-text">
+            <div class="logo">
+                <img src="pics/logo.png" alt="Logo" />
+            </div>
+            <div class="details">
+                <h2 class="heading">Open Hours</h2>
+                <h3 class="subheading">Monday - Friday</h3>
+                <p>10AM - 11PM</p>
+                <h3 class="subheading">Saturday - Sunday</h3>
+                <p>10AM - 12AM</p>
+            </div>
+            <div class="details">
+                <h3 class="subheading">Call Us:</h3>
+                <h4>0921 436 9075 <br>0916 783 3211</h4>
+            </div>
+            <div class="details">
+                <h3 class="subheading" id="address">Address</h3>
+                <p>G/F, Forbers Town Center, Bonifacio Global City, Taguig City 1634 Metro Manila</p>
+            </div>
+        </div>
+        <div class="div-form">
+            <h1>Book a Reservation Now!</h1>
+            <form action="#" method="post" class="form">
+                <div class="column">
+                    <div class="input-box">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+                    </div>
+                </div>  
+                <div class="column">
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="mobnum">Mobile Number</label>
+                        <input type="text" id="mobnum" name="mobnum" placeholder="+63" required>
+                    </div>
+                </div>
+                <div class="input-box schedule">
+                    <label>Choose a Date and Time</label>
+                    <input type="date" id="date" name="date" placeholder="Choose a date" required>
+                    <div class="column">
+                        <div class="select-box">
+                            <select name="time" id="time">
+                                <option value="" selected>Select a time</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                                <option value="11:00 PM">11:00 PM</option>
+                                <option value="12:00 AM">12:00 AM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" placeholder="0" required>
+                </div>
+                <div class="input-box">
+                    <label for="occassion">Special Occassion (Optional)</label>
+                    <input type="occassion" id="occassion" name="occassion" placeholder="Occassion">
+                </div>
+                <div class="input-box">
+                    <label for="request">Special Request/s (Optional)</label>
+                    <input type="request" id="request" name="request" placeholder="Do you have any special requests?">
+                </div>
+                <button>Book Now</button>
+            </form>
+                
+        </div>
+    </div>
+
+<footer class="footer"></footer>
+<script src="js/footer.js"></script>
+<script src="https://kit.fontawesome.com/b75e76cb79.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Patty's Point</title>
+  <link rel="icon" type="image/x-icon" href="/pics/logo.png">
+  <link href="styles/index.css" rel="stylesheet" type="text/css" />
+  <link href="styles/menu.css" rel="stylesheet" type="text/css" />
+  <link href="styles/nav.css" rel="stylesheet" type="text/css" />
+  <link href="styles/footer.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+   <nav class="navbar"></nav>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/nav.js"></script>
+
+<header class="menu-header">
+  <h1>Beverages</h1>
+  <h2>Quench your thirst with our selection of refreshing drinks, from classic sodas to specialty cocktails.</h2>
+</header>
+  
+<section>
+	<table>
+		<thead>
+			<tr>
+				<th>Item</th>
+				<th>Description</th>
+				<th>Price</th>
+				<th>Category</th>
+			</tr>
+		</thead>
+    
+		<tbody>
+      
+    <!-- Cocktail Towers -->  
+			<tr>
+				<td><img id="myImg1" src="pics/menu/drink 3.png" alt="Cocktail Towers" style="width:100%;max-width:300px"></td>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div> 
+				<td>Our signature Cocktail Towers are perfect for sharing with friends or for a unique centerpiece at your next event. Choose from five different variations where each tower comes with a variety of handcrafted cocktails, making them the perfect choice for any occasion.</td>
+				<td>₱599 - ₱699</td>
+				<td>Beverages</td>
+			</tr>
+      
+    <!-- Branch Special Cocktails -->
+			<tr>
+				<td><img id="myImg2" src="pics/menu/drink4.png" alt="Branch Special" style="width:100%;max-width:300px"></td>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption"></div>
+          </div> 
+				<td>Our talented mixologists have created a selection of Branch Special Cocktails, each with its own unique blend of flavors and ingredients. Our cocktails are made with fresh ingredients and premium spirits to ensure the highest quality and taste.</td>
+				<td>₱626 - ₱805</td>
+				<td>Beverages</td>
+			</tr>
+      
+    <!-- Other Beverages -->
+      <tr>
+        <td><img id="myImg3" src="pics/menu/drink1.png" alt="Other Beverages" style="width:100%;max-width:300px"></td>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption"></div>
+          </div>
+				<td>In addition to our signature cocktails, we also offer a wide variety of other drinks including beers, wine, and hard liquor. Whether you're in the mood for a cold and refreshing beer or a smooth and sophisticated whiskey, our restobar has something for everyone.  </td>
+				<td>₱92 - ₱958</td>
+				<td>Beverages</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the images and insert them inside the modal - use their "alt" text as a caption
+  var img1 = document.getElementById("myImg1");
+  var img2 = document.getElementById("myImg2");
+  var img3 = document.getElementById("myImg3");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  
+  img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+</script>
+
+  
+<footer class="footer"></footer>
+<script src="js/footer.js"></script>
+<script src="https://kit.fontawesome.com/b75e76cb79.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>

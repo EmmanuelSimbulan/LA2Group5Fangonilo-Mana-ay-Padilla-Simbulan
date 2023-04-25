@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us - Restaurant Name</title>
+  <link rel="icon" type="image/x-icon" href="/pics/logo.png">
+	<link rel="stylesheet" type="text/css" href="styles/about.css">
+  <link href="styles/nav.css" rel="stylesheet" type="text/css" />
+  <link href="styles/footer.css" rel="stylesheet" type="text/css" />
+	
+  <!-- Google Maps API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	
+  <script>
+		function initMap() {
+			var location = {lat: 40.7128, lng: -74.0060};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: location
+			});
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
+	</script>
+</head>
+
+<body onload="initMap()">
+  <nav class="navbar"></nav>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/nav.js"></script>
+
+	<main>
+		<section class="about">
+			<h2>Our Story</h2>
+			<p>The name "Patty's Point" was chosen as a tribute to Patricia, one of the co-founders of the restaurant. Her passion for creating unique and delicious dishes inspired the menu and the concept of showcasing different cuisines. With a focus on quality ingredients, handcrafted cocktails, and a relaxed atmosphere, Patty's Point quickly became a popular destination for locals and tourists alike. From intimate dinners to lively group gatherings, there's always a reason to come back and enjoy the best of what the city has to offer at Patty's Point. 
+
+        Patty's Point is more than just a resto bar - it's a culinary experience that takes your taste buds on a journey around the world. With a menu that showcases an eclectic mix of cuisines, from Asian fusion to European classics, there's something for everyone at Patty's Point.
+
+But Patty's Point is more than just great food - it's also a place to create memories with friends and loved ones. It all started in 2022, when four classmates - Shawn, Hannah, Patricia, and Yman - decided to turn their passion for food into a business. Their goal was simple: to create a space where people could come together, relax, and enjoy the finer things in life.
+
+And that's exactly what they've done. From their signature cocktails to their mouth-watering barkada meals, everything at Patty's Point is designed to help you unwind and have a good time. So why not come and experience it for yourself? Whether you're celebrating a special occasion or just looking for a night out with friends, Patty's Point is the perfect destination.
+      </p>
+		</section>
+		
+    <section class="team">
+			<h2>Our Chef</h2>
+			<ul>
+				<li>
+					<img src="pics/about/hannah.png" alt="Chef Name">
+					<h3>Chef Hannah Padilla</h3>
+					<p>With over a decade of experience in the culinary industry, Chef Hannah Padilla is known for her innovative twists on classic dishes. She is constantly experimenting with new ingredients and techniques to create unique flavor profiles that surprise and delight diners.</p>
+				</li>
+				<li>
+					<img src="pics/about/shawn.png" alt="Chef Name">
+					<h3>Chef Shawn Michael Mana-ay</h3>
+					<p>Chef Shawn Michael Mana-ay is a master of fusion cuisine, blending flavors and cooking styles from around the world to create dishes that are truly one-of-a-kind. He is passionate about using fresh, seasonal ingredients and is always on the lookout for new and interesting ingredients to incorporate into his recipes.</p>
+				</li>
+				<li>
+					<img src="pics/about/pat.png" alt="Chef Name">
+					<h3>Chef Patricia Ysabel Fangonilo</h3>
+					<p>Chef Patricia Ysabel Fangonilo is the heart and soul of Patty's Point. Her passion for cooking is evident in every dish she creates, and her dedication to quality and attention to detail ensure that every meal that leaves her kitchen is nothing short of perfection. She specializes in traditional Filipino cuisine, putting her own unique spin on classic dishes to create something truly special.</p>
+				</li>
+				<li>
+					<img src="pics/about/yman.png" alt="Chef Name">
+					<h3>Chef Emmanuel Simbulan</h3>
+					<p>Chef Emmanuel Simbulan has traveled the world, honing his skills and learning new techniques from some of the best chefs in the business. He brings that international flair to the kitchen at Patty's Point, creating dishes that are inspired by cuisines from all over the globe. His passion for food is contagious, and his creative energy is evident in every dish he creates.</p>
+				</li>
+			</ul>
+		</section>
+		
+    <section class="location">
+			<h2>Location</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30895.84349359069!2d121.04154435!3d14.54311145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f3fa2994af%3A0x89c988af4760e40a!2sBonifacio%20Global%20City%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1682347500648!5m2!1sen!2sph" width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+		
+    <section class="gallery">
+			<h2>Gallery</h2>
+			<div class="gallery-images">
+				<img src="pics/about/rest1.webp" alt="Gallery Image">
+				<img src="pics/about/rest2.jpeg" alt="Gallery Image">
+				<img src="pics/about/rest3.jpeg" alt="Gallery Image">
+				<img src="pics/about/rest4.jpeg" alt="Gallery Image">
+				<img src="pics/about/rest5.jpeg" alt="Gallery Image">
+				<img src="pics/about/rest6.jpeg" alt="Gallery Image">
+      </div>
+	</main>
+
+      <h1 class="section-title">Videos</h1>
+    <p class="section-p">Get a glimpse of the stunning view at Patty's Resto Bar! Watch this video and experience the inviting atmosphere and scenic surroundings that make this restaurant a must-visit destination.</p>
+    <section>
+
+      <iframe class="video" width="1120" height="560" src="https://www.youtube.com/embed/_dui6BUmMBg" frameborder="0"
+        allowfullscreen></iframe>
+    </section>
+
+<footer class="footer"></footer>
+<script src="js/footer.js"></script>
+<script src="https://kit.fontawesome.com/b75e76cb79.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>
